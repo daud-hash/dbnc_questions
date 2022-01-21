@@ -1,0 +1,7 @@
+// Describe the code to improve it
+
+I would not use local storage to store all this information. 
+If we need to use the local storage. 
+I would create a separate function for that instead of first setting to local storage and then setting the components state. 
+useAuthProvide is not returing anything, I would return the user state from this hook. 
+I would remove console.logs.Error messages are not very descriptive.

@@ -1,0 +1,152 @@
+.form {
+    background-color: #177adb;
+    padding: 19px 47px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.form .form-group-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 14px;
+}
+
+.form .form-group-wrapper .form-group {
+    width: 52%;
+    flex: 54.5% 0;
+}
+
+.form .form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 53px;
+}
+
+.form .form-group label {
+    display: block;
+    width: 100%;
+    font-size: 31px;
+    color: #fff;
+    line-height: 1.2;
+    font-style: italic;
+    margin-bottom: 15px;
+    text-align: left;
+    letter-spacing: -1px;
+}
+
+.form .form-group textarea,
+.form .form-group input {
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: 100%;
+    font-size: 33px;
+    color: #fff;
+    line-height: 1.2;
+    padding: 16px 22px 18px;
+    outline: none !important;
+    font-weight: 400;
+    font-family: inherit;
+    letter-spacing: -1.5px;
+    box-sizing: border-box;
+}
+
+.form .form-group textarea::placeholder,
+.form .form-group input::placeholder {
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.form .form-group textarea {
+    min-height: 289px;
+    resize: none;
+}
+
+.form .form-group.date {
+    width: 41%;
+    flex: 41.5% 0 0;
+}
+
+.form .form-group.date input {
+    padding: 15px 0 18px 73px;
+    position: relative;
+}
+
+.form .form-group textarea::placeholder {
+    opacity: 0.5;
+}
+
+.form .form-group.date input[type=date]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    /* text-align: left; */
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background-color: red;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: rgb(255, 255, 255);
+    opacity: 1;
+    display: block;
+    width: 45px;
+    height: 45px;
+    border-width: thin;
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    transform: translateY(-50%);
+    background: url(../image/c-img.svg) no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width: 1024px) {
+    .form .form-group textarea,
+    .form .form-group input,
+    .form .form-group label {
+        font-size: 20px;
+    }
+    .form .form-group {
+        margin-bottom: 18px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .form {
+        padding: 19px 30px;
+    }
+    .form .form-group-wrapper {
+        /* flex-direction: column; */
+        display: block;
+    }
+    .form .form-group-wrapper .form-group,
+    .form .form-group-wrapper .form-group.date {
+        width: 100%;
+        flex: 100% 0 0;
+    }
+    .form .form-group textarea,
+    .form .form-group input,
+    .form .form-group label {
+        font-size: 16px;
+        letter-spacing: -0.7px;
+        padding: 10px;
+    }
+    .form .form-group label {
+        margin-bottom: 0;
+    }
+    .form .form-group textarea {
+        min-height: 100px;
+    }
+    .form .form-group-wrapper .form-group.date input {
+        padding: 11px 0 11px 53px;
+    }
+    input[type="date"]::-webkit-calendar-picker-indicator {
+        width: 25px;
+        height: 25px;
+    }
+}

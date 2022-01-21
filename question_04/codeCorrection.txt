@@ -1,0 +1,6 @@
+server_echo.forEach(
+    element => console.log(element)
+)
+
+This will be executed first, 
+if we want this to execute after we receive the result from the request we need to add this block of code inside the second then.
